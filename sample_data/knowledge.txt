@@ -1,0 +1,9 @@
+Knowledge Assistant is a lightweight retrieval system built to answer questions from a local knowledge base. It ingests text documents, finds the most relevant passages, and uses them as context for a final answer.
+
+This project is designed for situations where you want a simple RAG workflow without needing a full vector database at the start. It works well for internal documentation, project notes, FAQs, or product information stored as plain text files.
+
+The retrieval layer uses TF-IDF similarity to match a user question against indexed chunks. When an OpenAI API key is configured, the app can use GPT to turn the retrieved context into a polished response. Without the API key, it can still provide grounded answers from the retrieved context.
+
+A RAG system usually combines retrieval and generation. Retrieval finds the most useful knowledge, and generation turns that information into a useful answer in natural language.
+
+This sample knowledge base includes a few project notes about local search, document ingestion, product context, and answer generation. It is intentionally small so the app is easy to run and understand.
